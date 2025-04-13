@@ -99,7 +99,7 @@ pub fn custom_request(url: &String, session_id: &String) -> Result<Vec<u128>, re
 
     for _i in 1..10 {
         let cookie_value = cookie_value.clone();
-        let anti_forgery_token = "9p8N4aNdFXbj75aBMrQO5wqvDVY1GjBD4ppjUZPITCbwhcJj4rLOPKdjHCRVWnSPG00gkbpRSHZPkGVl591E9Zk1xj54ZpmAG7ar3M-zeqY1:I5fkHKXQlU7u8xuUn3AToXu_E3kigz8Buqh56-PowHlzG7m9HxVsWGB6J3L7XHc80YAnUS44ex8wyRQPAiE4gZxpWIaMubSyAcj4WW17F0w1";
+        let anti_forgery_token = "";
         let now = Instant::now();
         let res = client
             .post(url.to_string())
